@@ -5,3 +5,9 @@ from django.http import HttpResponse
 
 def hola(request):
     return HttpResponse("hola mundo")
+
+def vader(request):
+    return HttpResponse("<h1>this is dave vader</h1>")
+
+def starwars(request, nombre):
+    return HttpResponse(f"Hola {nombre} saludos !!!")
